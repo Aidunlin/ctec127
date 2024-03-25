@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Model Customers API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="my-5 mx-auto px-3" style="max-width:fit-content">
+    <header>
+        <h1>Classic Model Customers API</h1>
+        <a class="fs-4" href="api.php" target="_blank">API Link</a>
+    </header>
+
+    <main class="my-4">
+        <h2>Examples</h2>
+
+        <h3 class="fs-5 mt-4">Paginate your results</h3>
+        <p>Default limit of results is 10.</p>
+
+        <a href="api.php?limit=10&skip=10" target="_blank"
+            class="d-block text-decoration-none">/api.php?limit=10&skip=10</a>
+        <iframe src="api.php?limit=10&skip=10" height="200" class="w-100 border rounded"></iframe>
+
+        <h3 class="fs-5 mt-4">Get all customers</h3>
+
+        <a href="api.php?limit=0" target="_blank" class="d-block text-decoration-none">/api.php?limit=0</a>
+        <iframe src="api.php?limit=0" height="200" class="w-100 border rounded"></iframe>
+
+        <h3 class="fs-5 mt-4">Match any property value</h3>
+        <p>Parameter names and values are case-insensitive.</p>
+
+        <a href="api.php?country=usa" target="_blank" class="d-block text-decoration-none">/api.php?country=usa</a>
+        <iframe src="api.php?country=usa" height="200" class="w-100 border rounded"></iframe>
+        <a href="api.php?creditlimit=60300.00" target="_blank"
+            class="d-block text-decoration-none">/api.php?creditlimit=60300.00</a>
+        <iframe src="api.php?creditlimit=60300.00" height="200" class="w-100 border rounded"></iframe>
+
+        <h3 class="fs-5 mt-4">Narrow your search</h3>
+
+        <a href="api.php?country=usa&creditlimit=60300.00" target="_blank"
+            class="d-block text-decoration-none">/api.php?country=usa&creditlimit=60300.00</a>
+        <iframe src="api.php?country=usa&creditlimit=60300.00" height="200" class="w-100 border rounded"></iframe>
+
+        <h3 class="fs-5 mt-4">Check for null values</h3>
+
+        <a href="api.php?salesrepemployeenumber=null" target="_blank"
+            class="d-block text-decoration-none">/api.php?salesrepemployeenumber=null</a>
+        <iframe src="api.php?salesrepemployeenumber=null" height="200" class="w-100 border rounded"></iframe>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2024 Aidan Linerud - CTEC 127
+            <br>
+            <a href="api.php" target="_blank">API Link</a>
+        </p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

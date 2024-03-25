@@ -1,0 +1,16 @@
+/* CSS for ctec-127-lab-5.php */
+
+body {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 1.25em;
+    background-color: #dadada;
+}
+
+.form-label {
+    color: #336699;
+}
+
+.pill {
+    background: #336699;
+    color: white;
+}
